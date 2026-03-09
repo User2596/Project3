@@ -12,11 +12,12 @@ public class Driver {
 		System.out.println();
 		
 		System.out.print("Enter the amount of capital invested: ");
-		String amount = sc.next();
+		String amount = sc.nextLine();
 		System.out.print("Enter the interest rate: ");
-		String rate = sc.next();
+		String rate = sc.nextLine();
 		System.out.print("Enter year: ");
 		int period = sc.nextInt();
+		sc.nextLine();
 		
 		System.out.print("Amount after "+period+" years: ");
 		System.out.println(interestAmount(amount, rate, period));
